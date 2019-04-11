@@ -32,6 +32,8 @@ A Terraform module to run the Vault UI [Goldfish](https://vault-ui.io/).
 * }
 * ```
 
+See [example](example) for a complete example ....
+
 ## Fineprint
 
 This terraform module will NOT work out of the box (for obvious reasons). You (the operator) will need to comb through each variable and possibly change the value.
@@ -39,8 +41,6 @@ This terraform module will NOT work out of the box (for obvious reasons). You (t
 In particular, Goldfish's certificates are not handled in this module. You may want to add steps to fetch those certificates in `user_data.sh` or provision them.
 
 It is highly recommended to add steps in `user_data.sh` to disable swap and ssh for security reasons, as Goldfish may contain sensitive data in memory for brief moments in transit.
-
-See [example](example) for a complete example ....
 
 ## Documentation generation
 
