@@ -13,7 +13,7 @@ variable "goldfish_version" {
 # configure how goldfish will listen to requests
 variable "listener" {
   type        = "map"
-  description = "Configuration for goldfish listener. See github.com/caiyeon/goldfish/config for more"
+  description = "Configuration for goldfish listener. See [Wiki Configuration] for more"
 
   # this default will NOT launch. It only serves as a template
   default = {
@@ -28,11 +28,11 @@ variable "listener" {
 # configure how goldfish will connect to vault
 variable "vault" {
   type        = "map"
-  description = "Configuration for goldfish connection to vault. See github.com/caiyeon/goldfish/config for more"
+  description = "Configuration for goldfish connection to vault. See [Wiki Configuration] for more"
 
   # this default will NOT launch. It only serves as a template
   default = {
-    address         = "https://vault.rocks:8200"
+    address         = "https://vault.hostname:8200"
     tls_skip_verify = "0"
     runtime_config  = "secret/goldfish"
     approle_login   = "auth/approle/login"

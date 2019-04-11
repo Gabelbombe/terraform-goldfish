@@ -23,7 +23,7 @@ A Terraform module to run the Vault UI [Goldfish](https://vault-ui.io/).
 *   }
 *
 *   vault = {
-*     address         = "https://vault.{your_host}:8200"
+*     address         = "https://vault.hostname:8200"
 *     tls_skip_verify = "0"
 *     runtime_config  = "secret/goldfish"
 *     approle_login   = "auth/approle/login"

@@ -22,7 +22,7 @@ module "goldfish" {
   }
 
   vault = {
-    address         = "https://vault.{your_host}:8200"
+    address         = "https://vault.hostname:8200"
     tls_skip_verify = "0"
     runtime_config  = "secret/goldfish"
     approle_login   = "auth/approle/login"
@@ -66,8 +66,8 @@ GPL 3.0 Licensed. See [LICENSE](https://github.com/ehime/terraform-securitymonke
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | goldfish_version | Version of goldfish to deploy | string | `v0.8.0` | no |
-| listener | Configuration for goldfish listener. See github.com/caiyeon/goldfish/config for more | map | `<map>` | no |
-| vault | Configuration for goldfish connection to vault. See github.com/caiyeon/goldfish/config for more | map | `<map>` | no |
+| listener | Configuration for goldfish listener. See [Wiki Configuration] for more | map | `<map>` | no |
+| vault | Configuration for goldfish connection to vault. See [Wiki Configuration] for more | map | `<map>` | no |
 | wrapping_token | A wrapped approle secret_id for goldfish to bootstrap to vault | string | - | yes |
 
 ## Outputs
