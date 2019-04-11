@@ -35,9 +35,9 @@ module "goldfish" {
 
 This terraform module will NOT work out of the box (for obvious reasons). You (the operator) will need to comb through each variable and possibly change the value.
 
-In particular, Goldfish's certificates are not handled in this module. You may want to add steps to fetch those certificates in `user_data.sh`, or provision them.
+In particular, Goldfish's certificates are not handled in this module. You may want to add steps to fetch those certificates in `user_data.sh` or provision them.
 
-It is highly recommended to add steps in user_data.sh to disable swap and ssh for security reasons, as goldfish may contain sensitive data in memory for brief moments in transit.
+It is highly recommended to add steps in `user_data.sh` to disable swap and ssh for security reasons, as Goldfish may contain sensitive data in memory for brief moments in transit.
 
 See [example](example) for a complete example ....
 
@@ -67,4 +67,4 @@ GPL 3.0 Licensed. See [LICENSE](https://github.com/ehime/terraform-securitymonke
 
 | Name | Description |
 |------|-------------|
-| goldfish_public_ip |  |
+| goldfish_public_ip | The public IP address used to access the Vault UI |
