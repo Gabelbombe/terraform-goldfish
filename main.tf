@@ -11,7 +11,7 @@ A Terraform module to run the Vault UI [Goldfish](https://vault-ui.io/).
 *   source = "git@github.com/ehime:terraform-goldfish?ref=v1.0.0"
 *
 *   # deployment config variables
-*   wrapping_token   = "See wiki for how to generate this"
+*   wrapping_token   = "See [wiki](https://github.com/Caiyeon/goldfish/wiki) for how to generate this"
 *   goldfish_version = "v0.8.0"
 *
 *   listener = {
