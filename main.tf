@@ -11,7 +11,7 @@ A Terraform module to run the Vault UI [Goldfish](https://vault-ui.io/).
 *   source = "git@github.com/ehime:terraform-goldfish?ref=v1.0.0"
 *
 *   # deployment config variables
-*   wrapping_token   = "See [wiki](https://github.com/Caiyeon/goldfish/wiki) for how to generate this"
+*   wrapping_token   = "See wiki for how to generate this"
 *   goldfish_version = "v0.8.0"
 *
 *   listener = {
@@ -41,6 +41,13 @@ This terraform module will NOT work out of the box (for obvious reasons). You (t
 In particular, Goldfish's certificates are not handled in this module. You may want to add steps to fetch those certificates in `user_data.sh` or provision them.
 
 It is highly recommended to add steps in `user_data.sh` to disable swap and ssh for security reasons, as Goldfish may contain sensitive data in memory for brief moments in transit.
+
+## Goldfish Wiki
+  = [Home](https://github.com/Caiyeon/goldfish/wiki)
+  - [Configuration](https://github.com/Caiyeon/goldfish/wiki/Configuration)
+  - [FAQ](https://github.com/Caiyeon/goldfish/wiki/FAQ)
+  - [Features](https://github.com/Caiyeon/goldfish/wiki/Features)
+  - [Production Deployment](https://github.com/Caiyeon/goldfish/wiki/Production-Deployment)
 
 ## Documentation generation
 
