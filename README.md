@@ -42,7 +42,7 @@ In particular, Goldfish's certificates are not handled in this module. You may w
 It is highly recommended to add steps in `user_data.sh` to disable swap and ssh for security reasons, as Goldfish may contain sensitive data in memory for brief moments in transit.
 
 ## Goldfish Wiki
-= [Home](https://github.com/Caiyeon/goldfish/wiki)
+- [Home](https://github.com/Caiyeon/goldfish/wiki)
 - [Configuration](https://github.com/Caiyeon/goldfish/wiki/Configuration)
 - [FAQ](https://github.com/Caiyeon/goldfish/wiki/FAQ)
 - [Features](https://github.com/Caiyeon/goldfish/wiki/Features)
